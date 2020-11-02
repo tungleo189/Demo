@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    tools:context=".FragmentAddStudent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="302dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Add New Student"
+        android:textColor="#00BCD4"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/etStudentRoll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etStudentRoll"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Rollnumber"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etStudentName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/etStudentName"
+        android:layout_width="291dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etStudentPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etStudentRoll" />
+
+    <EditText
+        android:id="@+id/etStudentPhone"
+        android:layout_width="289dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etStudentEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etStudentName" />
+
+    <EditText
+        android:id="@+id/etStudentEmail"
+        android:layout_width="292dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/spCourse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etStudentPhone" />
+
+    <Spinner
+        android:id="@+id/spCourse"
+        android:layout_width="285dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etStudentEmail" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="92dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="41dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spCourse" />
+</androidx.constraintlayout.widget.ConstraintLayout>

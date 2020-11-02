@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    tools:context=".FragmentAddCourse">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="296dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Add New Course"
+        android:textColor="#00BCD4"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/etCourseCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCourseCode"
+        android:layout_width="264dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Code"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etCourseName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etCourseName"
+        android:layout_width="258dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCourseCode" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="91dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="24dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCourseName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
